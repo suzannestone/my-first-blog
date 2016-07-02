@@ -1,39 +1,39 @@
 <html>
-	<head>
-		<title>Draft BOSQ blog</title>
-	</head>
+<head>
+	<title>Draft BOSQ blog</title>
+</head>
 
-	<body>
-		<div>
-		<h1><em><a ref="">Bushwalkers of Southern Queensland</a><em></h1>
-		</div>
-
-
-{% for post in posts %}
+<body>
 	<div>
-		<p>published: {{ post.published_date }}</p>
-		<h1><a href="">{{ post.title }}</a><h1>
-		<p>{{ post.text|linebreaksbr }}</p>
+	<h1><em><a ref="">Bushwalkers of Southern Queensland</a><em></h1>
 	</div>
-{% endfor %}
 
-		<p>Welcome!</p>
 
-		<p>Bushwalkers of Southern Queensland Inc. (BOSQ) is one of the most active bushwalking clubs in south-east Queensland.</p>
-
-		<p>Visitors and prospective members are most welcome at our club meetings. If you have an interest in walking with a club as a safe and healthy recreational activity, we’d love to meet you.</p>
-
-		<p>Please see our monthly Activity Program page for a detailed Walk and Social guide for the upcoming month.   Please also see the future walks Calendar programme web page for information on our long term future club walks and socials.</p>
-
-		<p>Interested in coming along to meet us!!</p>
+	{% for post in posts %}
 		<div>
-		{% for post in posts %}
-			{{ posts }}
-		{% endfor %}
+			<p>published: {{ post.published_date }}</p>
+			<h1><a href="">{{ post.title }}</a><h1>
+			<p>{{ post.text|linebreaksbr }}</p>
 		</div>
+	{% endfor %}
 
-		<h3><a ref="">Activity Program</a></h2>
-		<h3><a ref="">Become a member</a></h2>
+	<p>Welcome!</p>
 
-	</body>
+	<p>Bushwalkers of Southern Queensland Inc. (BOSQ) is one of the most active bushwalking clubs in south-east Queensland.</p>
+
+	<p>Visitors and prospective members are most welcome at our club meetings. If you have an interest in walking with a club as a safe and healthy recreational activity, we’d love to meet you.</p>
+
+	<p>Please see our monthly Activity Program page for a detailed Walk and Social guide for the upcoming month.   Please also see the future walks Calendar programme web page for information on our long term future club walks and socials.</p>
+
+	<p>Interested in coming along to meet us!!</p>
+	<div>
+	{% for post in posts %}
+		{{ posts }}
+	{% endfor %}
+	</div>
+
+	<h3><a ref="">Activity Program</a></h2>
+	<h3><a ref="">Become a member</a></h2>
+
+</body>
 </html> 
